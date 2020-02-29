@@ -1,0 +1,42 @@
+{
+    "name": "satupersen/auth",
+    "description": "The Illuminate Auth package.",
+    "license": "MIT",
+    "homepage": "https://laravel.com",
+    "support": {
+        "issues": "https://github.com/laravel/framework/issues",
+        "source": "https://github.com/laravel/framework"
+    },
+    "authors": [
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "satupersen/contracts": "^1.0",
+        "satupersen/http": "^1.0",
+        "satupersen/queue": "^1.0",
+        "satupersen/support": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Satupersen\\Auth\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "suggest": {
+        "satupersen/console": "Required to use the auth:clear-resets command (^1.0).",
+        "satupersen/queue": "Required to fire login / logout events (^1.0).",
+        "satupersen/session": "Required to use the session based guard (^1.0)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
